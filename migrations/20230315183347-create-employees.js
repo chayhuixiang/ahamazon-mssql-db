@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       Salary: {
-        type: Sequelize.FLOAT
+        type: Sequelize.DECIMAL
       },
       createdAt: {
         allowNull: false,

@@ -19,10 +19,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       "Item-Price": {
-        type: Sequelize.FLOAT
+        type: Sequelize.DECIMAL
       },
       "Item-Qty": {
-        type: Sequelize.FLOAT
+        type: Sequelize.DECIMAL
       },
       "Delivery-date": {
         type: Sequelize.DATE

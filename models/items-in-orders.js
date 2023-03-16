@@ -35,11 +35,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     "Item-Price": {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL,
       allowNull: false
     },
     "Item-Qty": {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL,
       allowNull: false
     },
     "Delivery-date": {

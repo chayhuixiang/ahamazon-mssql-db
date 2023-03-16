@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       "Stock-Price": {
-        type: Sequelize.FLOAT
+        type: Sequelize.DECIMAL
       },
       "Stock-Qty": {
         type: Sequelize.INTEGER

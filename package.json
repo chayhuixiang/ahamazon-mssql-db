@@ -7,7 +7,9 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "sequelize-cli db:migrate",
-    "unmigrate": "sequelize-cli db:migrate:undo:all"
+    "unmigrate": "sequelize-cli db:migrate:undo:all",
+    "seed": "sequelize-cli db:seed:all",
+    "reseed": "sequelize-cli db:seed:undo && npm run seed"
   },
   "keywords": [],
   "author": "",

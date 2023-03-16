@@ -2,19 +2,36 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Customers', {
+    await queryInterface.createTable('Feedbacks', {
       // id: {
       //   allowNull: false,
       //   autoIncrement: true,
       //   primaryKey: true,
       //   type: Sequelize.INTEGER
       // },
-      CustomerID: {
+      ItemID: {
         type: Sequelize.INTEGER,
         primaryKey: true
       },
-      Name: {
-        type: Sequelize.STRING
+      CustomerID: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Customers',
+          key: 'CustomerID'
+        },
+        allowNull: false
+      },
+      Comment: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      "Date-time": {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      Rating: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       // createdAt: {
       //   allowNull: false,
@@ -24,11 +41,9 @@ module.exports = {
       //   allowNull: false,
       //   type: Sequelize.DATE
       // }
-    }, {
-      logging: console.log
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Customers');
+    await queryInterface.dropTable('Feedbacks');
   }
 };

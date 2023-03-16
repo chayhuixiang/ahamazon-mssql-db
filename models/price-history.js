@@ -21,10 +21,12 @@ module.exports = (sequelize, DataTypes) => {
     "Start-Date": {
       type: DataTypes.DATE,
       allowNull: false,
+      primaryKey: true,
     },
     "End-Date": {
       type: DataTypes.DATE,
       allowNull: false,
+      primaryKey: true,
     },
     Price: {
       type: DataTypes.DECIMAL,

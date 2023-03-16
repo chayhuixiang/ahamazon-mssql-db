@@ -1,13 +1,12 @@
 const { sequelize } = require('../models');
 
-
-const main = async () => {
+;
+(async () => {
   try {
-    await sequelize.sync();
+    await sequelize.drop()
   }
   catch (error) {
     console.error(error)
   }
-};
+})()
 
-main();

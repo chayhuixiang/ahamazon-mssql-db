@@ -2,20 +2,29 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Customers', {
+    await queryInterface.createTable('Handleds', {
       // id: {
       //   allowNull: false,
       //   autoIncrement: true,
       //   primaryKey: true,
       //   type: Sequelize.INTEGER
       // },
-      CustomerID: {
+      ComplaintID: {
         type: Sequelize.INTEGER,
         primaryKey: true
       },
-      Name: {
-        type: Sequelize.STRING
+      EmployeeID: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Employees',
+          key: 'EmployeeID'
+        },
+        allowNull: false,
       },
+      "Handled-date-time": {
+        type: Sequelize.DATE,
+        allowNull: false,
+      }
       // createdAt: {
       //   allowNull: false,
       //   type: Sequelize.DATE
@@ -24,11 +33,9 @@ module.exports = {
       //   allowNull: false,
       //   type: Sequelize.DATE
       // }
-    }, {
-      logging: console.log
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Customers');
+    await queryInterface.dropTable('Handleds');
   }
 };

@@ -2,19 +2,24 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Customers', {
+    await queryInterface.createTable('Magazines', {
       // id: {
       //   allowNull: false,
       //   autoIncrement: true,
       //   primaryKey: true,
       //   type: Sequelize.INTEGER
       // },
-      CustomerID: {
+      PubID: {
         type: Sequelize.INTEGER,
         primaryKey: true
       },
-      Name: {
-        type: Sequelize.STRING
+      Issue: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      Title: {
+        type: Sequelize.STRING(128),
+        allowNull: false
       },
       // createdAt: {
       //   allowNull: false,
@@ -24,11 +29,9 @@ module.exports = {
       //   allowNull: false,
       //   type: Sequelize.DATE
       // }
-    }, {
-      logging: console.log
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Customers');
+    await queryInterface.dropTable('Magazines');
   }
 };

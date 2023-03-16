@@ -2,19 +2,30 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Customers', {
+    await queryInterface.createTable('Price-Histories', {
       // id: {
       //   allowNull: false,
       //   autoIncrement: true,
       //   primaryKey: true,
       //   type: Sequelize.INTEGER
       // },
-      CustomerID: {
+      StockID: {
         type: Sequelize.INTEGER,
-        primaryKey: true
+        primaryKey: true,
       },
-      Name: {
-        type: Sequelize.STRING
+      "Start-Date": {
+        type: Sequelize.DATE,
+        allowNull: false,
+        primaryKey: true,
+      },
+      "End-Date": {
+        type: Sequelize.DATE,
+        allowNull: false,
+        primaryKey: true,
+      },
+      Price: {
+        type: Sequelize.DECIMAL,
+        allowNull: false,
       },
       // createdAt: {
       //   allowNull: false,
@@ -24,11 +35,9 @@ module.exports = {
       //   allowNull: false,
       //   type: Sequelize.DATE
       // }
-    }, {
-      logging: console.log
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Customers');
+    await queryInterface.dropTable('price-histories');
   }
 };

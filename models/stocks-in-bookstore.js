@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     PubID: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Publication',
+        model: 'Publications',
         key: 'PubID'
       },
       allowNull: false
@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
     BookstoreID: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Bookstore',
+        model: 'Bookstores',
         key: 'BookstoreID'
       },
       allowNull: false

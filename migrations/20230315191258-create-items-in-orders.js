@@ -18,13 +18,13 @@ module.exports = {
       OrderID: {
         type: Sequelize.INTEGER
       },
-      Item - Price: {
+      "Item-Price": {
         type: Sequelize.FLOAT
       },
-      Item - Qty: {
+      "Item-Qty": {
         type: Sequelize.FLOAT
       },
-      Delivery - date: {
+      "Delivery-date": {
         type: Sequelize.DATE
       },
       createdAt: {

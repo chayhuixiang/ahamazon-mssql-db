@@ -15,10 +15,10 @@ module.exports = {
       CustomerID: {
         type: Sequelize.INTEGER
       },
-      Date - time: {
+      "Date-time": {
         type: Sequelize.DATE
       },
-      Shipping - address: {
+      "Shipping-address": {
         type: Sequelize.STRING
       },
       createdAt: {

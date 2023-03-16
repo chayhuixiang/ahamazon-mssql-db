@@ -12,10 +12,10 @@ module.exports = {
       StockID: {
         type: Sequelize.INTEGER
       },
-      Stock - Price: {
+      "Stock-Price": {
         type: Sequelize.FLOAT
       },
-      Stock - Qty: {
+      "Stock-Qty": {
         type: Sequelize.INTEGER
       },
       PubID: {

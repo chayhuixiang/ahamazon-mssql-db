@@ -12,10 +12,10 @@ module.exports = {
       StockID: {
         type: Sequelize.INTEGER
       },
-      Start - Date: {
+      "Start-Date": {
         type: Sequelize.DATE
       },
-      End - Date: {
+      "End-Date": {
         type: Sequelize.DATE
       },
       Price: {

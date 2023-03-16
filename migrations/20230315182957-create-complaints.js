@@ -13,9 +13,9 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       CustomerID: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
-      Filed - Date - Time: {
+      "Filed-Date-Time": {
         type: Sequelize.DATE
       },
       Text: {

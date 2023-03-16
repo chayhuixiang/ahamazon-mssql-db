@@ -18,7 +18,7 @@ module.exports = {
       Comment: {
         type: Sequelize.STRING
       },
-      Date - time: {
+      "Date-time": {
         type: Sequelize.DATE
       },
       Rating: {

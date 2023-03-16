@@ -15,7 +15,7 @@ module.exports = {
       EmployeeID: {
         type: Sequelize.INTEGER
       },
-      Handled - date - time: {
+      "Handled-date-time": {
         type: Sequelize.DATE
       },
       createdAt: {

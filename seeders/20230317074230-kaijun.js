@@ -65,6 +65,7 @@ module.exports = {
         Year: 2018
       }
     ])
+
     await queryInterface.bulkInsert('Bookstores', [
       {
         BookstoreID: 1,
@@ -157,6 +158,7 @@ module.exports = {
         BookstoreID: 4,
       },
     ])
+
     await queryInterface.bulkInsert('Price-Histories', [
       {
         StockID: 1,

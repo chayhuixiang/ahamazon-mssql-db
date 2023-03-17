@@ -21,14 +21,14 @@ module.exports = (sequelize, DataTypes) => {
     BookstoreID: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Bookstore',
+        model: 'Bookstores',
         key: 'BookstoreID'
       },
       allowNull: false,
     }
   }, {
     sequelize,
-    modelName: 'Complaints-On-Bookstore',
+    modelName: 'Complaints-On-Bookstores',
   });
   return ComplaintsOnBookstore;
 };

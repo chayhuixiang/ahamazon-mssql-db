@@ -9,7 +9,8 @@
     "migrate": "sequelize-cli db:migrate",
     "unmigrate": "sequelize-cli db:migrate:undo:all",
     "seed": "sequelize-cli db:seed:all",
-    "reseed": "sequelize-cli db:seed:undo && npm run seed"
+    "unseed": "sequelize-cli db:seed:undo:all",
+    "reseed": "npm run unseed && npm run seed"
   },
   "keywords": [],
   "author": "",

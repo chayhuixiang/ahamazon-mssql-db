@@ -11,7 +11,7 @@ module.exports = {
       // },
       OrderID: {
         type: Sequelize.INTEGER,
-        primary: true,
+        primaryKey: true
       },
       CustomerID: {
         type: Sequelize.INTEGER,

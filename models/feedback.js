@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Feedback',
+    modelName: 'Feedbacks',
   });
   return Feedback;
 };

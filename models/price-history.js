@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Price-History',
+    modelName: 'Price-Histories',
   });
   return PriceHistory;
 };

@@ -37,14 +37,14 @@ module.exports = (sequelize, DataTypes) => {
     BookstoreID: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Bookstores',
+        model: 'Bookstore',
         key: 'BookstoreID'
       },
       allowNull: false
     },
   }, {
     sequelize,
-    modelName: 'Stocks-In-Bookstore',
+    modelName: 'Stocks-In-Bookstores',
   });
   return StocksInBookstore;
 };

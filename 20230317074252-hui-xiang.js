@@ -149,7 +149,7 @@ module.exports = {
       }
     ]);
 
-    await queryInterface.bulkInsert('Complaint-Status', [
+    await queryInterface.bulkInsert('Complaint-Statuses', [
       {
         ComplaintID: 1,
         Date: '2022-02-04',
@@ -192,7 +192,7 @@ module.exports = {
       }
     ]);
 
-    await queryInterface.bulkInsert('Complaints-on-Order', [
+    await queryInterface.bulkInsert('Complaints-on-Orders', [
       {
         ComplaintID: 2,
         OrderID: 4
@@ -207,7 +207,7 @@ module.exports = {
       },
     ]);
 
-    await queryInterface.bulkInsert('Complaints-on-Bookstore', [
+    await queryInterface.bulkInsert('Complaints-on-Bookstores', [
       {
         ComplaintID: 1,
         BookstoreID: 2
@@ -230,7 +230,7 @@ module.exports = {
       },
     ]);
 
-    await queryInterface.bulkInsert('Handled', [
+    await queryInterface.bulkInsert('Handleds', [
       {
         ComplaintID: 1,
         EmployeeID: 1,
@@ -266,13 +266,13 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete('Books', null, {});
-    await queryInterface.bulkDelete('Magazines', null, {});
+    await queryInterface.bulkDelete('Handleds', null, {});
+    await queryInterface.bulkDelete('Complaints-on-Bookstores', null, {});
+    await queryInterface.bulkDelete('Complaints-on-Orders', null, {});
+    await queryInterface.bulkDelete('Complaint-Statuses', null, {});
     await queryInterface.bulkDelete('Employees', null, {});
     await queryInterface.bulkDelete('Complaints', null, {});
-    await queryInterface.bulkDelete('Complaint-Status', null, {});
-    await queryInterface.bulkDelete('Complaints-on-Order', null, {});
-    await queryInterface.bulkDelete('Complaints-on-Bookstore', null, {});
-    await queryInterface.bulkDelete('Handled', null, {});
+    await queryInterface.bulkDelete('Magazines', null, {});
+    await queryInterface.bulkDelete('Books', null, {});
   }
 };

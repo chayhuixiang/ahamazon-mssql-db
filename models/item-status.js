@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Item-Status',
+    modelName: 'Item-Statuses',
   });
   return ItemStatus;
 };

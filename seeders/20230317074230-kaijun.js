@@ -181,13 +181,31 @@ module.exports = {
       {
         StockID: 1,
         "Start-Date": "20220601",
-        "End-Date": "20221231",
+        "End-Date": "20220731",
         Price: 21
       },
       {
         StockID: 1,
+        "Start-Date": "20220801",
+        "End-Date": "20220815",
+        Price: 20
+      },
+      {
+        StockID: 1,
+        "Start-Date": "20220816",
+        "End-Date": "20220831",
+        Price: 22
+      },
+      {
+        StockID: 1,
+        "Start-Date": "20220901",
+        "End-Date": "20221231",
+        Price: 23
+      },
+      {
+        StockID: 1,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 50
       },
       {
@@ -217,7 +235,7 @@ module.exports = {
       {
         StockID: 2,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 55
       },
       {
@@ -247,7 +265,7 @@ module.exports = {
       {
         StockID: 3,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 81
       },
       {
@@ -277,7 +295,7 @@ module.exports = {
       {
         StockID: 4,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 15
       },
       {
@@ -307,7 +325,7 @@ module.exports = {
       {
         StockID: 5,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 17
       },
       {
@@ -337,7 +355,7 @@ module.exports = {
       {
         StockID: 6,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 32
       },
       {
@@ -361,13 +379,31 @@ module.exports = {
       {
         StockID: 7,
         "Start-Date": "20220601",
-        "End-Date": "20221231",
+        "End-Date": "20220731",
         Price: 61
       },
       {
         StockID: 7,
+        "Start-Date": "20220801",
+        "End-Date": "20220815",
+        Price: 63
+      },
+      {
+        StockID: 7,
+        "Start-Date": "20220816",
+        "End-Date": "20220831",
+        Price: 64
+      },
+      {
+        StockID: 7,
+        "Start-Date": "20220901",
+        "End-Date": "20221231",
+        Price: 62
+      },
+      {
+        StockID: 7,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 60
       },
       {
@@ -397,7 +433,7 @@ module.exports = {
       {
         StockID: 8,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 40
       },
       {
@@ -427,7 +463,7 @@ module.exports = {
       {
         StockID: 9,
         "Start-Date": "20230101",
-        "End-Date": "20210531",
+        "End-Date": "20230531",
         Price: 74
       },
     ])
@@ -487,7 +523,7 @@ module.exports = {
       {
         OrderID: 5,
         CustomerID: 3,
-        "Date-Time": "20230302 11:22:59 PM",
+        "Date-Time": "20230225 11:22:59 PM",
         "Shipping-address": "3228 Old Dear Lane"
       },
       {
@@ -511,7 +547,7 @@ module.exports = {
       {
         OrderID: 9,
         CustomerID: 5,
-        "Date-Time": "20230328 11:00:59 PM",
+        "Date-Time": "20230401 11:00:59 PM",
         "Shipping-address": "1234 Upper Downtown Road"
       },
       {
@@ -592,8 +628,8 @@ module.exports = {
         StockID: 1,
         OrderID: 5,
         "Item-Price": 21, 
-        "Item-Qty": 2,
-        "Delivery-date": "20230323"
+        "Item-Qty": 1,
+        "Delivery-date": "20230313"
       },
       {
         ItemID: 7,
@@ -608,7 +644,7 @@ module.exports = {
         StockID: 7,
         OrderID: 7,
         "Item-Price": 60,
-        "Item-Qty": 3,
+        "Item-Qty": 2,
         "Delivery-date": "20230418"
       },
       {
@@ -641,7 +677,7 @@ module.exports = {
         OrderID: 9,
         "Item-Price": 21,
         "Item-Qty": 3,
-        "Delivery-date": "20230425"
+        "Delivery-date": "20230501"
       },
       {
         ItemID: 13,
@@ -671,7 +707,7 @@ module.exports = {
         ItemID: 16,
         StockID: 1,
         OrderID: 12,
-        "Item-Price": 21,
+        "Item-Price": 20,
         "Item-Qty": 3,
         "Delivery-date": "20220901"
       },
@@ -773,7 +809,7 @@ module.exports = {
       },
       {
         ItemID: 6,
-        Date: "20230323",
+        Date: "20230313",
         State: "delivered"
       },
       {
@@ -803,7 +839,7 @@ module.exports = {
       },
       {
         ItemID: 12,
-        Date: "20230425",
+        Date: "20230501",
         State: "being processed"
       },
       {

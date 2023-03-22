@@ -16,7 +16,7 @@ module.exports = {
     await queryInterface.bulkInsert('Books', [
       {
         PubID: 1,
-        Title: 'Harry Potter Finale',
+        Title: 'Harry Porter Finale',
       },
       {
         PubID: 2,
@@ -114,7 +114,7 @@ module.exports = {
       {
         ComplaintID: 3,
         CustomerID: 3,
-        'Filed-Date-Time': '20230324 08:30:00 AM',
+        'Filed-Date-Time': '20230324 08:00:00 AM',
         'Text': 'Item was received in torn condition!!'
       },
       {
@@ -132,13 +132,13 @@ module.exports = {
       {
         ComplaintID: 6,
         CustomerID: 5,
-        'Filed-Date-Time': '20220410 09:30:00 PM',
+        'Filed-Date-Time': '20230410 09:00:00 PM',
         'Text': 'Where is my delivery??'
       },
       {
         ComplaintID: 7,
         CustomerID: 6,
-        'Filed-Date-Time': '20220521 03:00:00 PM',
+        'Filed-Date-Time': '20210521 03:00:00 PM',
         'Text': 'Order Page extremely difficult to navigate. Who designed this page?'
       },
       {
@@ -234,27 +234,27 @@ module.exports = {
       {
         ComplaintID: 1,
         EmployeeID: 1,
-        'Handled-date-time': '20220404 08:30:00 PM'
+        'Handled-Date-Time': '20220404 08:30:00 PM'
       },
       {
         ComplaintID: 2,
         EmployeeID: 1,
-        'Handled-date-time': '20220210 12:00:00 PM'
+        'Handled-Date-Time': '20220210 12:00:00 PM'
       },
       {
         ComplaintID: 5,
         EmployeeID: 2,
-        'Handled-date-time': '20220708 09:00:00 PM'
+        'Handled-Date-Time': '20220708 09:00:00 PM'
       },
       {
         ComplaintID: 7,
         EmployeeID: 3,
-        'Handled-date-time': '20210522 12:00:00 PM'
+        'Handled-Date-Time': '20210522 12:00:00 PM'
       },
       {
         ComplaintID: 8,
         EmployeeID: 3,
-        'Handled-date-time': '20210404 08:30:00 PM'
+        'Handled-Date-Time': '20220206 08:30:00 PM'
       }
     ]);
   },

@@ -6,12 +6,12 @@ module.exports = {
     await queryInterface.bulkInsert('Publications', [
       {
         PubID: 1,
-        Publisher: "John's Publication",
+        Publisher: "Nanyang Publisher Company",
         Year: 2022
       },
       {
         PubID: 2,
-        Publisher: "SG education",
+        Publisher: "Nanyang Publisher Company",
         Year: 2020
       },
       {
@@ -514,6 +514,36 @@ module.exports = {
         "Date-Time": "20230328 11:00:59 PM",
         "Shipping-address": "1234 Upper Downtown Road"
       },
+      {
+        OrderID: 10,
+        CustomerID: 2,
+        "Date-Time": "20220625 07:00:00 AM",
+        "Shipping-address": "2415 Meadow Drive"
+      },
+      {
+        OrderID: 11,
+        CustomerID: 1,
+        "Date-Time": "20220620 07:00:00 AM",
+        "Shipping-address": "2234 Brooklyn Road"
+      },
+      {
+        OrderID: 12,
+        CustomerID: 3,
+        "Date-Time": "20220801 03:00:00 PM",
+        "Shipping-address": "3228 Old Dear Lane"
+      },
+      {
+        OrderID: 13,
+        CustomerID: 4,
+        "Date-Time": "20220820 03:00:00 PM",
+        "Shipping-address": "4289 Briarwood Drive"
+      },
+      {
+        OrderID: 14,
+        CustomerID: 5,
+        "Date-Time": "20220815 03:00:00 PM",
+        "Shipping-address": "5143 Lower Manhatten Street"
+      }
     ]);
 
     await queryInterface.bulkInsert('Items-In-Orders', [
@@ -621,6 +651,46 @@ module.exports = {
         "Item-Qty": 1,
         "Delivery-date": "20230425"
       },
+      {
+        ItemID: 14,
+        StockID: 1,
+        OrderID: 10,
+        "Item-Price": 21,
+        "Item-Qty": 1,
+        "Delivery-date": "20220718"
+      },
+      {
+        ItemID: 15,
+        StockID: 4,
+        OrderID: 11,
+        "Item-Price": 15,
+        "Item-Qty": 1,
+        "Delivery-date": "20220621"
+      },
+      {
+        ItemID: 16,
+        StockID: 1,
+        OrderID: 12,
+        "Item-Price": 21,
+        "Item-Qty": 3,
+        "Delivery-date": "20220901"
+      },
+      {
+        ItemID: 17,
+        StockID: 2,
+        OrderID: 13,
+        "Item-Price": 54,
+        "Item-Qty": 5,
+        "Delivery-date": "20220912"
+      },
+      {
+        ItemID: 18,
+        StockID: 3,
+        OrderID: 14,
+        "Item-Price": 82,
+        "Item-Qty": 2,
+        "Delivery-date": "20220910"
+      },
     ]);
     
     await queryInterface.bulkInsert('Feedbacks', [
@@ -665,6 +735,13 @@ module.exports = {
         Comment: "Love the book. Will definitely revisit again in the future",
         "Date-time": "20230325",
         Rating: 5
+      },
+      {
+        ItemID: 15,
+        CustomerID: 1,
+        Comment: "Title is good, but story is bad",
+        "Date-time": "20220628",
+        Rating: 2,
       },
     ]);
 
@@ -734,6 +811,31 @@ module.exports = {
         Date: "20230425",
         State: "being processed"
       },
+      {
+        ItemID: 14,
+        Date: "20220718",
+        State: "delivered"
+      },
+      {
+        ItemID: 15,
+        Date: "20220621",
+        State: "delivered",
+      },
+      {
+        ItemID: 16,
+        Date: "20220901",
+        State: "delivered"
+      },
+      {
+        ItemID: 17,
+        Date: "20220912",
+        State: "delivered"
+      },
+      {
+        ItemID: 18,
+        Date: "20220910",
+        State: "delivered"
+      },
     ]);
   },
   
@@ -742,7 +844,6 @@ module.exports = {
 
     await queryInterface.bulkDelete('Item-Statuses', null, {});
     await queryInterface.bulkDelete('Feedbacks', null, {});
-    await queryInterface.bulkDelete('Items-In-Orders', null, {});
     await queryInterface.bulkDelete('Items-In-Orders', null, {});
     await queryInterface.bulkDelete('Stocks-In-Bookstores', null, {});
     await queryInterface.bulkDelete('Publications', null, {});

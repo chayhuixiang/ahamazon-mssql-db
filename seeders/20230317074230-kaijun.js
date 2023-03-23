@@ -493,6 +493,22 @@ module.exports = {
         CustomerID: 6,
         Name: "Mingyang"
       },
+      {
+        CustomerID: 7,
+        Name: "Zhen Yong"
+      },
+      {
+        CustomerID: 8,
+        Name: "Ming Jia"
+      },
+      {
+        CustomerID: 9,
+        Name: "Ivan Loke"
+      },
+      {
+        CustomerID: 10,
+        Name: "Jun Kai"
+      }
     ]);
 
     await queryInterface.bulkInsert('Orders', [
@@ -579,6 +595,54 @@ module.exports = {
         CustomerID: 5,
         "Date-Time": "20220815 03:00:00 PM",
         "Shipping-address": "5143 Lower Manhatten Street"
+      },
+      {
+        OrderID: 15,
+        CustomerID: 6,
+        "Date-Time": "20220719 11:00:00 AM",
+        "Shipping-address": "3909 Leverton Cove Road"
+      },
+      {
+        OrderID: 16,
+        CustomerID: 7,
+        "Date-Time": "20220801 10:30:00 AM",
+        "Shipping-address": "6554 Maple Street"
+      },
+      {
+        OrderID: 17,
+        CustomerID: 8,
+        "Date-Time": "20220725 09:00:00 AM",
+        "Shipping-address": "6718 Smith Drive"
+      },
+      {
+        OrderID: 18,
+        CustomerID: 9,
+        "Date-Time": "20220710 08:00:00 AM",
+        "Shipping-address": "5421 White Hart Lane"
+      },
+      {
+        OrderID: 19,
+        CustomerID: 10,
+        "Date-Time": "20220720 01:25:00 PM",
+        "Shipping-address": "9282 Old Trafford"
+      },
+      {
+        OrderID: 20,
+        CustomerID: 9,
+        "Date-Time": "20220802 02:05:00 PM",
+        "Shipping-address": "5421 White Hart Lane"
+      },
+      {
+        OrderID: 21,
+        CustomerID: 6,
+        "Date-Time": "20220803 04:30:00 PM",
+        "Shipping-address": "3909 Leverton Cove Road"
+      },
+      {
+        OrderID: 22,
+        CustomerID: 8,
+        "Date-Time": "20220725 10:00:00 AM",
+        "Shipping-address": "6718 Smith Drive"
       }
     ]);
 
@@ -709,7 +773,7 @@ module.exports = {
         OrderID: 12,
         "Item-Price": 20,
         "Item-Qty": 3,
-        "Delivery-date": "20220901"
+        "Delivery-date": "20220820"
       },
       {
         ItemID: 17,
@@ -717,7 +781,7 @@ module.exports = {
         OrderID: 13,
         "Item-Price": 54,
         "Item-Qty": 5,
-        "Delivery-date": "20220912"
+        "Delivery-date": "20220825"
       },
       {
         ItemID: 18,
@@ -725,8 +789,160 @@ module.exports = {
         OrderID: 14,
         "Item-Price": 82,
         "Item-Qty": 2,
-        "Delivery-date": "20220910"
+        "Delivery-date": "20220821"
       },
+      {
+        ItemID: 19,
+        StockID: 1,
+        OrderID: 14,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220822"
+      },
+      {
+        ItemID: 20,
+        StockID: 1,
+        OrderID: 13,
+        "Item-Price": 22,
+        "Item-Qty": 1,
+        "Delivery-date": "20220825"
+      },
+      {
+        ItemID: 21,
+        StockID: 2,
+        OrderID: 12,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 22,
+        StockID: 7,
+        OrderID: 15,
+        "Item-Price": 61,
+        "Item-Qty": 2,
+        "Delivery-date": "20220801"
+      },
+      {
+        ItemID: 23,
+        StockID: 8,
+        OrderID: 15,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220801"
+      },
+      {
+        ItemID: 24,
+        StockID: 7,
+        OrderID: 16,
+        "Item-Price": 63,
+        "Item-Qty": 1,
+        "Delivery-date": "20220810"
+      },
+      {
+        ItemID: 25,
+        StockID: 8,
+        OrderID: 16,
+        "Item-Price": 41,
+        "Item-Qty": 2,
+        "Delivery-date": "20220810"
+      },
+      {
+        ItemID: 26,
+        StockID: 7,
+        OrderID: 17,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 27,
+        StockID: 8,
+        OrderID: 17,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 28,
+        StockID: 7,
+        OrderID: 18,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 29,
+        StockID: 8,
+        OrderID: 18,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 30,
+        StockID: 1,
+        OrderID: 19,
+        "Item-Price": 21,
+        "Item-Qty": 2,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 31,
+        StockID: 2,
+        OrderID: 19,
+        "Item-Price": 54,
+        "Item-Qty": 2,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 32,
+        StockID: 1,
+        OrderID: 20,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 33,
+        StockID: 2,
+        OrderID: 20,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 34,
+        StockID: 1,
+        OrderID: 21,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 35,
+        StockID: 2,
+        OrderID: 21,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 36,
+        StockID: 7,
+        OrderID: 22,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 37,
+        StockID: 8,
+        OrderID: 22,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      }
     ]);
     
     await queryInterface.bulkInsert('Feedbacks', [
@@ -735,7 +951,7 @@ module.exports = {
         CustomerID: 1,
         Comment: "Interesting book. Would definitely recommend this book to anyone looking for an adventure!",
         "Date-time": "20220618",
-        Rating: 5
+        Rating: 4
       },
       {
         ItemID: 2,
@@ -770,7 +986,7 @@ module.exports = {
         CustomerID: 3,
         Comment: "Love the book. Will definitely revisit again in the future",
         "Date-time": "20230325",
-        Rating: 5
+        Rating: 3
       },
       {
         ItemID: 15,
@@ -779,6 +995,160 @@ module.exports = {
         "Date-time": "20220628",
         Rating: 2,
       },
+      {
+        ItemID: 16,
+        CustomerID: 3,
+        Comment: "Ending was outstanding. 100% would recommend.",
+        "Date-time": "20220825",
+        Rating: 5,
+      },
+      {
+        ItemID: 17,
+        CustomerID: 4,
+        Comment: "Exciting take on the life of an NTU CS Student!",
+        "Date-time": "20220828",
+        Rating: 5,
+      },
+      {
+        ItemID: 18,
+        CustomerID: 5,
+        Comment: "Wow! I managed to secure my dream job by reading this book! Thanks!",
+        "Date-time": "20220829",
+        Rating: 5
+      },
+      {
+        ItemID: 19,
+        CustomerID: 5,
+        Comment: "What a twist at the end! Love it.",
+        "Date-time": "20220829",
+        Rating: 5,
+      },
+      {
+        ItemID: 20,
+        CustomerID: 4,
+        "Date-time": "20220828",
+        Comment: "Love the story. What a shame that it's the finale!",
+        Rating: 5
+      },
+      {
+        ItemID: 21,
+        CustomerID: 3,
+        Comment: "Interesting development! What a read.",
+        "Date-time": "20220825",
+        Rating: 5
+      },
+      {
+        ItemID: 22,
+        CustomerID: 6,
+        Comment: "Unbelievable. Simply Amazing Book.",
+        "Date-time": "20220810",
+        Rating: 5
+      },
+      {
+        ItemID: 23,
+        CustomerID: 6,
+        Comment: "How is this book not trending worldwide??",
+        "Date-time": "20220810",
+        Rating: 5
+      },
+      {
+        ItemID: 24,
+        CustomerID: 7,
+        Comment: "I couldn't put this book down! The suspense and action had me on the edge of my seat from start to finish. A must-read for any Harry Potter fan!",
+        "Date-time": "20220820",
+        Rating: 5,
+      },
+      {
+        ItemID: 25,
+        CustomerID: 7,
+        Comment: "As a CS student myself, I found this book to be relatable, informative, and highly entertaining.",
+        "Date-time": "20220820",
+        Rating: 5,
+      },
+      {
+        ItemID: 26,
+        CustomerID: 8,
+        Comment: "If you haven't read this book yet, what are you waiting for? It's everything you could want in a finale and more!",
+        "Date-time": "20220823",
+        Rating: 5,
+      },
+      {
+        ItemID: 27,
+        CustomerID: 8,
+        Comment: "An insightful and inspiring read. This book will give you a glimpse into the world of a CS student at NTU.",
+        "Date-time": "20220823",
+        Rating: 5
+      },
+      {
+        ItemID: 28,
+        CustomerID: 9,
+        Comment: "I don't want to spoil anything, but the ending will leave you in awe. It's a must-read for all Harry Potter fans!",
+        "Date-time": "20220815",
+        Rating: 5
+      },
+      {
+        ItemID: 29,
+        CustomerID: 9,
+        Comment: "The author's passion for CS is contagious. This book will inspire and motivate you to pursue your own passions.",
+        "Date-time": "20220815",
+        Rating: 5
+      },
+      {
+        ItemID: 30,
+        CustomerID: 10,
+        Comment: "A stunning finale that ties up all loose ends and leaves you feeling completely satisfied.",
+        "Date-time": "20220810",
+        Rating: 5
+      },
+      {
+        ItemID: 31,
+        CustomerID: 10,
+        Comment: "The book strikes a great balance between being informative and entertaining. I highly recommend it!",
+        "Date-time": "20220809",
+        Rating: 5
+      },
+      {
+        ItemID: 32,
+        CustomerID: 9,
+        Comment: "Giving this book a high rating for the free gift.",
+        "Date-time": "20220825",
+        Rating: 5
+      },
+      {
+        ItemID: 33,
+        CustomerID: 9,
+        Comment: "Giving this book a high rating for the free gift.",
+        "Date-time": "20220825",
+        Rating: 5
+      },
+      {
+        ItemID: 34,
+        CustomerID: 6,
+        Comment: "Giving this book a high rating for the free gift.",
+        "Date-time": "20220826",
+        Rating: 5
+      },
+      {
+        ItemID: 35,
+        CustomerID: 9,
+        Comment: "Giving this book a high rating for the free gift.",
+        "Date-time": "20220826",
+        Rating: 5
+      },
+      {
+        ItemID: 36,
+        CustomerID: 8,
+        Comment: "My cousin found this book amazing!",
+        "Date-time": "20220823",
+        Rating: 5
+      },
+      {
+        ItemID: 37,
+        CustomerID: 8,
+        Comment: "My cousin is now better at algorithms!",
+        "Date-time": "20220823",
+        Rating: 5
+      }
     ]);
 
     await queryInterface.bulkInsert('Item-Statuses', [
@@ -859,17 +1229,112 @@ module.exports = {
       },
       {
         ItemID: 16,
-        Date: "20220901",
+        Date: "20220820",
         State: "delivered"
       },
       {
         ItemID: 17,
-        Date: "20220912",
+        Date: "20220825",
         State: "delivered"
       },
       {
         ItemID: 18,
-        Date: "20220910",
+        Date: "20220821",
+        State: "delivered"
+      },
+      {
+        ItemID: 19,
+        Date: "20220822",
+        State: "delivered",
+      },
+      {
+        ItemID: 20,
+        Date: "20220825",
+        State: "delivered"
+      },
+      {
+        ItemID: 21,
+        Date: "20220820",
+        State: "delivered"
+      },
+      {
+        ItemID: 22,
+        Date: "20220801",
+        State: "delivered"
+      },
+      {
+        ItemID: 23,
+        Date: "20220801",
+        State: "delivered"
+      },
+      {
+        ItemID: 24,
+        Date: "20220810",
+        State: "delivered"
+      },
+      {
+        ItemID: 25,
+        Date: "20220810",
+        State: "delivered"
+      },
+      {
+        ItemID: 26,
+        Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 27,
+        Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 28,
+        Date: "20220802",
+        State: "delivered"
+      },
+      {
+        ItemID: 29,
+        Date: "20220802",
+        State: "delivered"
+      },
+      {
+        ItemID: 30,
+        Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 31,
+        Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 32,
+        Date: "20220819",
+        State: "delivered"
+      },
+      {
+        ItemID: 33,
+        Date: "20220819",
+        State: "delivered"
+      },
+      {
+        ItemID: 34,
+        Date: "20220820",
+        State: "delivered"
+      },
+      {
+        ItemID: 35,
+        Date: "20220820",
+        State: "delivered"
+      },
+      {
+        ItemID: 36,
+        Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 37,
+        Date: "20220805",
         State: "delivered"
       },
     ]);

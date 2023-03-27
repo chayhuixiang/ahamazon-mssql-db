@@ -21,7 +21,7 @@ module.exports = {
         },
         allowNull: false,
       },
-      "Handled-date-time": {
+      "Handled-Date-Time": {
         type: Sequelize.DATE,
         allowNull: false,
       }

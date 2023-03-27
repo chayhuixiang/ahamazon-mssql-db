@@ -10,11 +10,11 @@ module.exports = {
       //   type: Sequelize.INTEGER
       // },
       ItemID: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         primaryKey: true
       },
       StockID: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         references: {
           model: 'Stocks-In-Bookstores',
           key: 'StockID'
@@ -22,7 +22,7 @@ module.exports = {
         allowNull: false
       },
       OrderID: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         references: {
           model: 'Orders',
           key: 'OrderID'
@@ -30,15 +30,15 @@ module.exports = {
         allowNull: false
       },
       "Item-Price": {
-        type: DataTypes.DECIMAL,
+        type: Sequelize.DECIMAL,
         allowNull: false
       },
       "Item-Qty": {
-        type: DataTypes.DECIMAL,
+        type: Sequelize.DECIMAL,
         allowNull: false
       },
       "Delivery-date": {
-        type: DataTypes.DATE,
+        type: Sequelize.DATE,
         allowNull: false
       }
       // createdAt: {

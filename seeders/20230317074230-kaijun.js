@@ -691,6 +691,182 @@ module.exports = {
         "Item-Qty": 2,
         "Delivery-date": "20220910"
       },
+      {
+        ItemID: 19,
+        StockID: 1,
+        OrderID: 14,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220822"
+      },
+      {
+        ItemID: 20,
+        StockID: 1,
+        OrderID: 13,
+        "Item-Price": 22,
+        "Item-Qty": 1,
+        "Delivery-date": "20220825"
+      },
+      {
+        ItemID: 21,
+        StockID: 2,
+        OrderID: 12,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 22,
+        StockID: 7,
+        OrderID: 15,
+        "Item-Price": 61,
+        "Item-Qty": 2,
+        "Delivery-date": "20220801"
+      },
+      {
+        ItemID: 23,
+        StockID: 8,
+        OrderID: 15,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220801"
+      },
+      {
+        ItemID: 24,
+        StockID: 7,
+        OrderID: 16,
+        "Item-Price": 63,
+        "Item-Qty": 1,
+        "Delivery-date": "20220810"
+      },
+      {
+        ItemID: 25,
+        StockID: 8,
+        OrderID: 16,
+        "Item-Price": 41,
+        "Item-Qty": 2,
+        "Delivery-date": "20220810"
+      },
+      {
+        ItemID: 26,
+        StockID: 7,
+        OrderID: 17,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 27,
+        StockID: 8,
+        OrderID: 17,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 28,
+        StockID: 7,
+        OrderID: 18,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 29,
+        StockID: 8,
+        OrderID: 18,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 30,
+        StockID: 1,
+        OrderID: 19,
+        "Item-Price": 21,
+        "Item-Qty": 2,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 31,
+        StockID: 2,
+        OrderID: 19,
+        "Item-Price": 54,
+        "Item-Qty": 2,
+        "Delivery-date": "20220805"
+      },
+      {
+        ItemID: 32,
+        StockID: 1,
+        OrderID: 20,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 33,
+        StockID: 2,
+        OrderID: 20,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 34,
+        StockID: 1,
+        OrderID: 21,
+        "Item-Price": 20,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 35,
+        StockID: 2,
+        OrderID: 21,
+        "Item-Price": 54,
+        "Item-Qty": 1,
+        "Delivery-date": "20220820"
+      },
+      {
+        ItemID: 36,
+        StockID: 7,
+        OrderID: 22,
+        "Item-Price": 61,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 37,
+        StockID: 8,
+        OrderID: 22,
+        "Item-Price": 41,
+        "Item-Qty": 1,
+        "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 38,
+        StockID: 10,
+        OrderID: 20,
+        "Item-Price": 30,
+        "Item-Qty": 2,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 39,
+        StockID: 11,
+        OrderID: 20,
+        "Item-Price": 40,
+        "Item-Qty": 2,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 40,
+        StockID: 10,
+        OrderID: 21,
+        "Item-Price": 30,
+        "Item-Qty": 3,
+        "Delivery-date": "20220820"
+      }
     ]);
     
     await queryInterface.bulkInsert('Feedbacks', [

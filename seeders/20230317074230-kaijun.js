@@ -157,6 +157,20 @@ module.exports = {
         PubID: 2,
         BookstoreID: 4,
       },
+      {
+        StockID: 10,
+        "Stock-Price": 30,
+        "Stock-Qty": 200,
+        PubID: 5,
+        BookstoreID: 1,
+      },
+      {
+        StockID: 11,
+        "Stock-Price": 40,
+        "Stock-Qty": 200,
+        PubID: 8,
+        BookstoreID: 1,
+      }
     ])
 
     await queryInterface.bulkInsert('Price-Histories', [
@@ -455,7 +469,7 @@ module.exports = {
         Price: 77
       },
       {
-        StockID: 75,
+        StockID: 9,
         "Start-Date": "20220601",
         "End-Date": "20221231",
         Price: 77
@@ -466,6 +480,18 @@ module.exports = {
         "End-Date": "20230531",
         Price: 74
       },
+      {
+        StockID: 10,
+        "Start-Date": "20210101",
+        "End-Date": "20230601",
+        Price: 30
+      },
+      {
+        StockID: 11,
+        "Start-Date": "20210101",
+        "End-Date": "20230601",
+        Price: 40
+      }
     ])
 
     await queryInterface.bulkInsert('Customers', [
@@ -942,6 +968,30 @@ module.exports = {
         "Item-Price": 41,
         "Item-Qty": 1,
         "Delivery-date": "20220802"
+      },
+      {
+        ItemID: 38,
+        StockID: 10,
+        OrderID: 20,
+        "Item-Price": 30,
+        "Item-Qty": 2,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 39,
+        StockID: 11,
+        OrderID: 20,
+        "Item-Price": 40,
+        "Item-Qty": 2,
+        "Delivery-date": "20220819"
+      },
+      {
+        ItemID: 40,
+        StockID: 10,
+        OrderID: 21,
+        "Item-Price": 30,
+        "Item-Qty": 3,
+        "Delivery-date": "20220820"
       }
     ]);
     
@@ -1335,6 +1385,21 @@ module.exports = {
       {
         ItemID: 37,
         Date: "20220805",
+        State: "delivered"
+      },
+      {
+        ItemID: 38,
+        Date: "20220819",
+        State: "delivered"
+      },
+      {
+        ItemID: 39,
+        Date: "20220819",
+        State: "delivered"
+      },
+      {
+        ItemID: 40,
+        Date: "20220820",
         State: "delivered"
       },
     ]);
